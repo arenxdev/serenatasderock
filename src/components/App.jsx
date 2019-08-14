@@ -1,8 +1,14 @@
 import React from 'react'
-import { Navbar } from './Navbar/Navbar'
+import { GlobalStyle } from '../styles/GlobalStyle'
+import { Navbar } from './Navbar'
+import { Hero } from './Hero'
 
 const App = () => (
-  <Navbar />
+  <>
+    <GlobalStyle />
+    <Navbar />
+    <Hero />
+  </>
 )
 
 export default App
