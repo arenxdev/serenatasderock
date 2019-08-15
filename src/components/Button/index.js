@@ -1,8 +1,8 @@
 import React from 'react'
-import { ModelButton } from './style'
+import { ModelButton, ModelLabel } from './style'
 
 export const Button = ({ text }) => (
   <ModelButton >
-    {text}
+    <ModelLabel>{text}</ModelLabel>
   </ModelButton>
 )

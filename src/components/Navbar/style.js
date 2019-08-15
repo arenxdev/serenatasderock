@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const MenuSeparator = styled.div`
   width: 2px;
-  height: 38px;
+  height: 30px;
   background-color: ${grey};
   margin: 0 25px;
 `

@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components'
 import { grey, greyLighten4, greyDarken2, red } from '../../styles/Colors'
 
 export const Container = styled.div`
-  height: 60px;
-  width: 160px;
+  height: 50px;
+  width: 120px;
   border-bottom: solid 2px ${grey};
   ${props => props.isSelected && css`
     background-color: ${greyLighten4};
