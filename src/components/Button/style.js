@@ -45,4 +45,5 @@ export const ModelLabel = styled.span`
   position: relative;
   display: block;
   padding: 12px 24px;
+  font-family: Roboto;
 `

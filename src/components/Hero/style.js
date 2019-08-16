@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
   &::after {
     content: "";
-    border-top: 30px solid transparent;
+    border-top: 40px solid transparent;
     border-right: 100vw solid #fff;
     position: absolute;
     bottom: 0;
