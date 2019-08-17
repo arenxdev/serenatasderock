@@ -3,6 +3,8 @@ import { GlobalStyle } from '../styles/GlobalStyle'
 import { Navbar } from './Navbar'
 import { Hero } from './Hero'
 import { HomeContent } from './HomeContent'
+import { ListOfSkills } from './ListOfSkills'
+import { Footer } from './Footer'
 
 const App = () => (
   <>
@@ -10,6 +12,8 @@ const App = () => (
     <Navbar />
     <Hero />
     <HomeContent />
+    <ListOfSkills />
+    <Footer />
   </>
 )
 
