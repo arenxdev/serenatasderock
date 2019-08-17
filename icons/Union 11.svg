@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41.085" height="45.156" viewBox="0 0 41.085 45.156">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f44336"/>
+      <stop offset="1" stop-color="#b71c1c"/>
+    </radialGradient>
+  </defs>
+  <path id="Union_11" data-name="Union 11" d="M-2322.457,95.152q-.089,0-.179,0c-2.984,0-21.26-11.777-20.329-32.9,1.2-13.238,17.345-12.236,20.329-12.236a1.527,1.527,0,0,1,.179.01,1.527,1.527,0,0,1,.179-.01c2.984,0,19.13-1,20.329,12.236.931,21.126-17.345,32.9-20.329,32.9Q-2322.368,95.156-2322.457,95.152Z" transform="translate(2343 -50)" fill="url(#radial-gradient)"/>
+</svg>

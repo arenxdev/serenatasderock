@@ -23,3 +23,4 @@ export const greyDarken4 = '#212121'
 
 export const teal = '#009688'
 export const black = '#000000'
+export const brancolor = '#00D8FF'
