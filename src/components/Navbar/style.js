@@ -1,14 +1,19 @@
 import styled from 'styled-components'
 import { grey } from '../../styles/Colors'
+import { boxshadow } from '../../styles/Styleutil'
 
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 140px 1fr auto auto;
   padding: 0 60px;
   align-items: center;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(224,224,224,0.75);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(224,224,224,0.75);
-  box-shadow: 0px 5px 5px 0px rgba(224,224,224,0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  ${boxshadow};
 `
 
 export const MenuSeparator = styled.div`

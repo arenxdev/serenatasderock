@@ -1,12 +1,12 @@
 import React from 'react'
-import { Container, Ancle } from './style.js'
+import { Container, Link } from './style.js'
 
-export const MenuButton = ({ url, text, isSelected }) => (
-  <Container isSelected={isSelected} >
-    <Ancle href={url} className='MenuButton__ancla' >
+export const MenuButton = ({ url = '#', text }) => (
+  <Container >
+    <Link to={url} className='MenuButton__ancla' >
       <span>
         {text}
       </span>
-    </Ancle>
+    </Link>
   </Container>
 )
