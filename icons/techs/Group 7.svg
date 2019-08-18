@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
-  <g id="Group_7" data-name="Group 7" transform="translate(-1452.5 -1701.5)">
-    <g id="Polygon_3" data-name="Polygon 3" transform="translate(1472.5 1701.5) rotate(90)" fill="none">
-      <path d="M18.75,0,25,10,18.75,20H6.25L0,10,6.25,0Z" stroke="none"/>
-      <path d="M 6.804250717163086 1 L 1.179250717163086 10 L 6.804250717163086 19 L 18.19575119018555 19 L 23.82074928283691 10 L 18.19575119018555 1 L 6.804250717163086 1 M 6.25 0 L 18.75 0 L 25 10 L 18.75 20 L 6.25 20 L 0 10 L 6.25 0 Z" stroke="none" fill="#00d8ff"/>
-    </g>
-    <path id="Polygon_4" data-name="Polygon 4" d="M8.541,0l2.847,3.893L8.541,7.787H2.847L0,3.893,2.847,0Z" transform="translate(1466.498 1708.255) rotate(90)" fill="#00d8ff"/>
-  </g>
-</svg>

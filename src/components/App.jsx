@@ -1,19 +1,15 @@
 import React from 'react'
-import { GlobalStyle } from '../styles/GlobalStyle'
-import { Navbar } from './Navbar'
-import { Hero } from './Hero'
-import { HomeContent } from './HomeContent'
-import { ListOfSkills } from './ListOfSkills'
-import { Footer } from './Footer'
+import { Router } from '@reach/router'
+import { Template } from '../templates/Template'
+import { Home } from '../pages/Home'
 
 const App = () => (
   <>
-    <GlobalStyle />
-    <Navbar />
-    <Hero />
-    <HomeContent />
-    <ListOfSkills />
-    <Footer />
+    <Template>
+      <Router>
+        <Home path='/' />
+      </Router>
+    </Template>
   </>
 )
 
