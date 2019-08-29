@@ -1,7 +1,18 @@
 import styled from 'styled-components'
-import { red, redDarken2 } from '../../styles/Colors'
+import { red, redDarken2, greyLighten1, grey } from '../../styles/Colors'
+
+const selectButtonColor = (type = 'primary') => {
+  const types = {
+    primary: red,
+    prymaryDark: redDarken2,
+    basic: greyLighten1,
+    basicDark: grey
+  }
+  return types[type]
+}
 
 export const ModelButton = styled.button`
+  ${props => props.width && { width: props.width }}
   position: relative;
   display: block;
   padding: 0;
@@ -10,14 +21,15 @@ export const ModelButton = styled.button`
   outline: none;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  background-color: ${red};
+  background-color: ${props => selectButtonColor(props.type)};
   color: #ecf0f1;
   transition: background-color .3s;
+  cursor: pointer;
   &:hover {
-    background-color: ${redDarken2};
+    background-color: ${props => selectButtonColor(`${props.type}Dark`)};
   }
   &:focus {
-    background-color: ${redDarken2};
+    background-color: ${props => selectButtonColor(`${props.type}Dark`)};
   }
   &::before {
     content: "";

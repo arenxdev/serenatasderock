@@ -68,3 +68,51 @@ export const Whastaap = props => (
     </g>
   </svg>
 )
+
+export const Google = props => (
+  <svg viewBox='0 0 546.69 553.81' {...props}>
+    <defs>
+      <clipPath id='prefix__clip-path'>
+        <path
+          className='prefix__cls-1'
+          d='M447.8 281a204.88 204.88 0 00-3.24-36.41H276.91v68.81h95.8a81.94 81.94 0 01-35.52 53.73v44.66h57.53c33.66-31 53.08-76.62 53.08-130.84z'
+        />
+      </clipPath>
+      <clipPath id='prefix__clip-path-2'>
+        <path
+          className='prefix__cls-1'
+          d='M276.91 454.92c48.06 0 88.36-15.94 117.81-43.13l-57.53-44.66c-15.94 10.68-36.33 17-60.28 17-46.37 0-85.61-31.32-99.61-73.39h-59.47v46.12a177.94 177.94 0 00159.08 98.07z'
+        />
+      </clipPath>
+      <clipPath id='prefix__clip-path-3'>
+        <path
+          className='prefix__cls-1'
+          d='M177.3 310.73a105.31 105.31 0 010-67.65V197h-59.47a178.28 178.28 0 000 159.89l59.47-46.12z'
+        />
+      </clipPath>
+      <clipPath id='prefix__clip-path-4'>
+        <path
+          className='prefix__cls-1'
+          d='M276.91 169.69c26.13 0 49.6 9 68 26.63L396 145.26c-30.83-28.73-71.12-46.37-119.1-46.37A178 178 0 00117.83 197l59.47 46.12c14-42.07 53.24-73.39 99.61-73.39z'
+        />
+      </clipPath>
+      <style>{'.prefix__cls-1{fill:none;clip-rule:evenodd}'}</style>
+    </defs>
+    <g id='prefix__Layer_2' data-name='Layer 2'>
+      <g id='prefix__Layer_1-2' data-name='Layer 1'>
+        <g clipPath='url(#prefix__clip-path)'>
+          <path fill='#3e82f1' d='M178.01 145.65h368.68v365.04H178.01z' />
+        </g>
+        <g clipPath='url(#prefix__clip-path-2)'>
+          <path fill='#32a753' d='M18.93 211.83h474.68v341.98H18.93z' />
+        </g>
+        <g clipPath='url(#prefix__clip-path-3)'>
+          <path fill='#f9bb00' d='M0 98.07h276.2v357.68H0z' />
+        </g>
+        <g clipPath='url(#prefix__clip-path-4)'>
+          <path fill='#e74133' d='M18.93 0H494.9v341.98H18.93z' />
+        </g>
+      </g>
+    </g>
+  </svg>
+)

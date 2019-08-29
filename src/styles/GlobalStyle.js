@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     padding: 0;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   #app {
