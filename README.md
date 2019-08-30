@@ -52,3 +52,7 @@ Gracias al servicio de autenticación de usuarios de Firebase podemos ahorrar mu
 Después de habilitar los servicios de autenticación con email y Google Accounts podemos programar el código necesario para enviar la información de los usuarios cuando se registran en nuestra aplicación.
 
 Nuestro proyecto tiene lista la UI del formulario para el registro, los usuarios deben escribir sus datos básicos y al momento de hacer click en el botón vamos a ejecutar la función Autenticación.crearCuentaEmailPass del archivo autenticacion.js, solo debemos llamar al método firebase.auth().createUserWithEmailAndPassword con los datos más importantes del usuario. Además, si el registro es exitoso podemos actualizar el resto de información de los usuarios con el método user.updateProfile o mandar las verificaciones que necesitemos.
+
+### SERVICIOS DE AUTENTICACIÓN CON GOOGLE
+
+Cuando añadimos autenticación con Google Accounts (o cualquier otra red social soportada por Firebase) el proceso de registro/inicio de sesión es un poco diferente: en vez de llenar un formulario y esperar un correo electrónico vamos a abrir una nueva ventana del navegador para llenar los datos que nos piden estas cuentas, así que, vamos a utilizar el método signInWithPopup() definiendo anteriormente el proveedor que necesitamos.

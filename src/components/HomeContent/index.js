@@ -10,7 +10,7 @@ export const HomeContent = () => (
       <Img src={guitarimg} />
     </ContentImg>
     <Content>
-      <Title>formar parte de la banda</Title>
+      <Title>forma parte de la banda</Title>
       <Text>Crea tu serenata perfecta seleccionando los músicos, instrumentos y canciones favoritas que quieres escuchar!</Text>
       <Text>Tenemos un repertorio de más de 170 canciones</Text>
       <Text>¿las canciones que quieres no están en nuestro repertorio? No te preocupes, Nosotros las ensamblamos para ti!</Text>
