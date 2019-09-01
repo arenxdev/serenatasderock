@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { greyDarken2 } from '../../styles/Colors'
+import { Link as LinkRouter } from '@reach/router'
 
 export const Container = styled.div`
   display: flex;
@@ -26,5 +27,10 @@ export const UserName = styled.div`
 `
 
 export const Options = styled.div`
+  color: ${greyDarken2};
+`
+
+export const Link = styled(LinkRouter)`
+  text-decoration: none;
   color: ${greyDarken2};
 `

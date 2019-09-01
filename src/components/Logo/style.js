@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 50px;
-  width: 115px;
+  height: ${props => `${(props.width / 2)}px`};
+  width: ${props => `${props.width}px`};
 `
 
 export const Img = styled.img`

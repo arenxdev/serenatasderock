@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react'
+import { auth } from './util/firebase'
 
 export const Context = createContext()
 
@@ -7,12 +8,13 @@ const Provider = ({ children }) => {
 
   const value = {
     isAuth,
-    activateAuth: token => {
-      window.sessionStorage.setItem('token', token)
+    activateAuth: user => {
+      window.sessionStorage.setItem('user', JSON.stringify(user))
       setIsAuth(true)
     },
     removeAuth: () => {
-      window.sessionStorage.removeItem('token')
+      window.sessionStorage.removeItem('user')
+      auth().signOut()
       setIsAuth(false)
     }
   }

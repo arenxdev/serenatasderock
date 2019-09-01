@@ -5,6 +5,7 @@ import { Home } from '../pages/Home'
 import { Serenade } from '../pages/Serenade'
 import { Gallery } from '../pages/Gallery'
 import { Contact } from '../pages/Contact'
+import { Login } from '../pages/Login'
 
 const App = () => (
   <>
@@ -13,6 +14,7 @@ const App = () => (
         <Serenade path='/serenatas' />
         <Gallery path='/galeria' />
         <Contact path='/contactanos' />
+        <Login path='/login' />
         <Home path='*' />
       </Router>
     </Template>

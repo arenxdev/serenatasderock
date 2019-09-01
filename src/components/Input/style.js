@@ -8,6 +8,7 @@ export const InputText = styled.input`
   width:270px;
   border:none;
   border-bottom:1px solid #757575;
+  background: transparent;
   &:focus {
     border: none;
   }

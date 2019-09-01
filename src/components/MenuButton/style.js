@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from '@reach/router'
 import { grey, greyLighten4, greyDarken2, red } from '../../styles/Colors'
-import { fadeIn } from '../../styles/Animation'
 
 export const Container = styled.div`
   height: 50px;

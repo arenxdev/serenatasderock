@@ -12,7 +12,6 @@ const textstyle = `
 export const Container = styled.div`
   width: 100%;
   height: 160px;
-  margin-top: 30px;
   background-color: ${greyDarken4};
 `
 
