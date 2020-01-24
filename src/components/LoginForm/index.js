@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { useInputValue } from '../../hooks/useInputValue'
-import { Form, ButtonGoogle, Container, Separator, NewAccount, Title, Text } from './style'
+import { Form, ButtonSocial, Container, ContainerSocial, Separator, NewAccount, Title, Text } from './style'
 import { Button } from '../Button'
-import { Google } from '../Socialsvg'
+import { Google, Facebook, Twitter } from '../Socialsvg'
 import { Input } from '../Input'
 import { Logo } from '../Logo'
 
-export const LoginForm = ({ signIn, googleSubmit, createAccount, isSuccessfull }) => {
+export const LoginForm = ({ signIn, googleSubmit, facebookSubmit, createAccount, isSuccessfull }) => {
   const name = useInputValue()
   const email = useInputValue()
   const password = useInputValue()
@@ -15,6 +15,15 @@ export const LoginForm = ({ signIn, googleSubmit, createAccount, isSuccessfull }
   const handleGoogleAuth = event => {
     event.preventDefault()
     googleSubmit()
+  }
+
+  const handleFacebookAuth = event => {
+    event.preventDefault()
+    facebookSubmit()
+  }
+
+  const handleTwitterAuth = event => {
+    event.preventDefault()
   }
 
   const handleSubmit = event => {
@@ -28,11 +37,18 @@ export const LoginForm = ({ signIn, googleSubmit, createAccount, isSuccessfull }
 
   const signNewUser = () => (
     <>
-      <div>
-        <ButtonGoogle type='button' onClick={handleGoogleAuth} >
-          <Google style={{ width: '30px', height: '30px' }} />
-          <span>Continuar con Google</span>
-        </ButtonGoogle>
+      <div style={{ width: '280px' }}>
+        <ContainerSocial>
+          <ButtonSocial type='button' onClick={handleGoogleAuth} title='Continuar con Google' >
+            <Google style={{ width: '40px' }} />
+          </ButtonSocial>
+          <ButtonSocial type='button' onClick={handleFacebookAuth} title='Continuar con Facebook' >
+            <Facebook />
+          </ButtonSocial>
+          <ButtonSocial type='button' onClick={handleTwitterAuth} title='Continuar con Twitter' >
+            <Twitter />
+          </ButtonSocial>
+        </ContainerSocial>
         <Separator>o</Separator>
       </div>
       <div style={{ height: '140px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '100%' }}>

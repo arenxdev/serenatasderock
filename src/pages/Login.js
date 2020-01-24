@@ -27,6 +27,15 @@ export const Login = () => {
 
   const signInWithGoogle = () => {
     const provider = new auth.GoogleAuthProvider()
+    signInWithAuth(provider)
+  }
+
+  const signInWithFacebok = () => {
+    const provider = new auth.FacebookAuthProvider()
+    signInWithAuth(provider)
+  }
+
+  const signInWithAuth = (provider) => {
     auth().signInWithPopup(provider)
       .then(result => {
         activateAuth(result.user)
@@ -52,6 +61,7 @@ export const Login = () => {
       {<LoginForm
         signIn={signIn}
         googleSubmit={signInWithGoogle}
+        facebookSubmit={signInWithFacebok}
         createAccount={createAccountEmailPassword}
         isSuccessfull={isSuccessfull}
       />}

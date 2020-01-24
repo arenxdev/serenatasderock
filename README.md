@@ -1,4 +1,4 @@
-# FIREBASE PARA LA WEB
+# DOCUMENTACIÓN
 
 ## BIENVENIDA E INTRODUCCIÓN
 
@@ -56,3 +56,11 @@ Nuestro proyecto tiene lista la UI del formulario para el registro, los usuarios
 ### SERVICIOS DE AUTENTICACIÓN CON GOOGLE
 
 Cuando añadimos autenticación con Google Accounts (o cualquier otra red social soportada por Firebase) el proceso de registro/inicio de sesión es un poco diferente: en vez de llenar un formulario y esperar un correo electrónico vamos a abrir una nueva ventana del navegador para llenar los datos que nos piden estas cuentas, así que, vamos a utilizar el método signInWithPopup() definiendo anteriormente el proveedor que necesitamos.
+
+### FIREBASE WEB LOGIN CON FACEBOOK
+
+Firebase el Backend as a Service de Google hace muy sencillo integrar a tus aplicaciones web login con Facebook. Habilita tú aplicación en la consola de Facebook Developers, maneja tokens de acceso y entiende todo el flujo de inicio de sesión usando el SDK de Firebase.
+
+### GESTIONANDO EL ESTADO DE LOS USUARIOS
+
+Firebase nos permite controlar nuestra aplicación dependiendo de los cambios en la autenticación de los usuarios con el método onAuthStateChanged(), nuestro trabajo es añadir el código necesario para cambiar los textos de nuestra aplicación dependiendo de si el usuario esta autenticado o no.

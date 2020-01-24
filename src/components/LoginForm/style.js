@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   width: 375px;
-  height: 450px;
+  height: 520px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
@@ -28,7 +28,14 @@ export const Form = styled.form`
   background: rgba(255,255,255,.9);
   position: absolute;
 `
-export const ButtonGoogle = styled.button`
+
+export const ContainerSocial = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const ButtonSocial = styled.button`
   font-family: Roboto;
   background-color: #fff;
   border-radius: 5px;
@@ -39,12 +46,13 @@ export const ButtonGoogle = styled.button`
   letter-spacing: 0.5px;
   cursor: pointer;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 10px;
   align-items: center;
-  width: 280px;
+  width: 80px;
   padding: 0 20px;
   &:hover {
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
   }
 `
 
